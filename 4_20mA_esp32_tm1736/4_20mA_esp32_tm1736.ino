@@ -10,7 +10,7 @@
 TM1637Display display(DIO, CLK);
 
 // สร้างออบเจ็กต์สำหรับ ADC ADS1115
-Adafruit_ADS1115 ads(0x48);
+Adafruit_ADS1115 ads;
 
 void setup()
 {
