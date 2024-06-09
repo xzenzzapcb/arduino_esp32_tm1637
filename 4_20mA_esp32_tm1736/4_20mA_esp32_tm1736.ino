@@ -1,5 +1,5 @@
 #include <Wire.h>             // ไลบรารีสำหรับการสื่อสาร I2C
-#include <Adafruit_ADS1015.h> // ไลบรารีสำหรับ ADC ADS1115
+#include <Adafruit_ADS1X15.h> // ไลบรารีสำหรับ ADC ADS1115
 #include <TM1637Display.h>    // ไลบรารีสำหรับ TM1637
 
 // กำหนดขาสำหรับการเชื่อมต่อกับ TM1637 Display
