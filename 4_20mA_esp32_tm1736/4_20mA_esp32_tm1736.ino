@@ -3,8 +3,11 @@
 #include <TM1637Display.h>    // ไลบรารีสำหรับ TM1637
 
 // กำหนดขาสำหรับการเชื่อมต่อกับ TM1637 Display
-#define CLK 19 // ขา CLK สำหรับ Display
-#define DIO 18 // ขา DIO สำหรับ Display
+#define CLK 18 // ขา CLK สำหรับ Display
+#define DIO 19 // ขา DIO สำหรับ Display
+
+//  GPIO 21(SDA)
+//  GPIO 22(SCL)
 
 // สร้างออบเจ็กต์สำหรับ TM1637 Display
 TM1637Display display(DIO, CLK);
@@ -57,7 +60,7 @@ void loop()
     {
         // แสดงค่ากระแสบน 7-Segment Display (แสดงเฉพาะหลัก 1, 2, และ 3)
         int displayValue = (int)current;
-        display.showNumberDec(displayValue, false, 3, 1);
+        display.showNumberDec(displayValue, false, 3, 4);
     }
 
     // หน่วงเวลา 1 วินาที
